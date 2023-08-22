@@ -40,8 +40,7 @@ def getXls(FileName: str,take: bool,keyword :str,onlyHead: bool,LastName:str,Dat
         return "无数据"
     
     temp = "区国库集中支付中心：\n " + \
-        "    根据" + Date1 + "日未录指标更新，我单位未录指标共有" + str(count) +"笔，共计"+ str(money) +"元。"
-
+        "    根据" + str(Date1) + "未录指标更新，我单位未录指标共有" + str(count) +"笔，共计"+ str(money) +"元。"
 
     app = xw.App(visible=False,add_book=False)
     app.display_alerts = False
